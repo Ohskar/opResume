@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6-dist/css/bootstrap-grid.min.css.map">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+    
+</head>
+
+<body class="body"> 
+    <nav>
+        <ul class="topnav" id="dropdownClick">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="topnav-right"><a href="#signin">Sign In</a></li>                 <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    </nav>
+    
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="jumbotron jumbotron-fluid">
+                      <h1 class="display-4">Picache Consulting</h1>
+                      <p class="lead">Guiding you to Success</p>
+                    </div>
+                </div>
+            
+            </div>
+        
+        </div>
+    
+    </header>
+    
+    
+    
+   
+   
+<!-- onlick js -->
+  <script>
+      function dropdownMenu(){
+          var x = document.getElementById("dropdownClick");
+          if (x.className ==="topnav") {
+              x.className += " responsive";
+              /* change top nav to topnav.responsive*/
+          } else {
+              x.className = "topnav";
+          }
+      } 
+    </script>
+  <!-- End onlick js -->
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <!--  Always Download latest version of Boostrap and add here-->
+  <script src="bootstrap-4.0.0-alpha.6-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
